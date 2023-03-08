@@ -13,11 +13,14 @@
           ></div>
         </template>
         <div>
-          <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
-            Lorem ipsum
+          <h2 :class="`mt-n1 headline font-weight-light text-${year.color}`">
+            {{year.company}}
           </h2>
+          <h3 :class="`mt-n1 headline font-weight-bold mb-4`">
+            {{year.title}}
+          </h3>
           <div>
-            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+            {{year.body}}
           </div>
         </div>
       </v-timeline-item>
@@ -29,24 +32,32 @@
     data: () => ({
       years: [
         {
-          color: 'cyan',
-          year: '1960',
+          color: 'blue',
+          year: '2019 - Current',
+          company: 'Salesforce',
+          title: 'Software Engineering SMTS',
+          body: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
         },
         {
-          color: 'green',
-          year: '1970',
-        },
-        {
-          color: 'pink',
-          year: '1980',
+          color: 'blue',
+          year: '2016 - 2019',
+          company: 'MapAnything',
+          title: 'Sr. Services Developer',
+          body: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
         },
         {
           color: 'amber',
-          year: '1990',
+          year: '2016 - 2016',
+          company: 'SMS',
+          title: 'Reporting Data Analyst',
+          body: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
         },
         {
-          color: 'orange',
-          year: '2000',
+          color: 'green',
+          year: '2015 - 2016',
+          company: 'Sunbelt',
+          title: 'Technology Analyst',
+          body: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
         },
       ],
     }),
