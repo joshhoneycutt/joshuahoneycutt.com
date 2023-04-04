@@ -13,10 +13,10 @@
           ></div>
         </template>
         <div>
-          <h2 :class="`mt-n1 headline font-weight-light text-${year.color}`">
+          <h2 :class="`mt-n1 headline font-weight-bold text-${year.color}`">
             {{year.company}}
           </h2>
-          <h3 :class="`mt-n1 headline font-weight-bold mb-4`">
+          <h3 :class="`mt-n1 headline mb-4`">
             {{year.title}}
           </h3>
           <div>
