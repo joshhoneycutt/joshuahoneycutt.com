@@ -10,6 +10,13 @@
     <v-row class="mb-6">
       <v-col>
         <v-sheet class="pa-2 ma-2">
+          <Timeline />
+        </v-sheet>
+      </v-col>
+    </v-row>
+    <v-row class="mb-6">
+      <v-col>
+        <v-sheet class="pa-2 ma-2">
           <Skills />
         </v-sheet>
       </v-col>
@@ -18,13 +25,6 @@
       <v-col>
         <v-sheet class="pa-2 ma-2">
           <Education />
-        </v-sheet>
-      </v-col>
-    </v-row>
-    <v-row class="mb-6">
-      <v-col>
-        <v-sheet class="pa-2 ma-2">
-          <Timeline />
         </v-sheet>
       </v-col>
     </v-row>

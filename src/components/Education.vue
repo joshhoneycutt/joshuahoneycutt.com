@@ -12,7 +12,7 @@
                     subtitle="Bachelor of Science (B.S.), Computer Science 2012-2016"
                     :href="item.link">{{ }}
                     </v-list-item>
-                    <br>
+                    <v-divider class="spacing"></v-divider>
                     <v-list-item
                     v-for="item in items"
                     :key="item.title"
@@ -59,6 +59,11 @@
             title: 'Salesforce Certified Service Cloud Consultant',
             link: 'https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=U1ZhzD1ua6SSex62QXeD5fczFhunP9nvEKBv5aaVeJzeNlSmPHeC+7wQ9Nf+u6bL'
         },
+        {
+            avatar: 'double-star-ranger.png',
+            title: 'Salesforce Double Star Ranger',
+            link: 'https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=U1ZhzD1ua6SSex62QXeD5fczFhunP9nvEKBv5aaVeJzeNlSmPHeC+7wQ9Nf+u6bL'
+        },
       ],
       schools: [
         {
@@ -70,3 +75,10 @@
     }),
   }
 </script>
+
+<style>
+.spacing {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+</style>

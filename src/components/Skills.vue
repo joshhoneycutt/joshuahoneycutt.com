@@ -12,24 +12,6 @@
                                 width="25"
                                 aspect-ratio="16/9"
                                 cover
-                                src="@/assets/js_logo.png"
-                                ></v-img>
-                            </v-sheet>
-                        </v-col>
-                        <v-col cols="auto">
-                            <v-sheet class="pa-2 ma-2">
-                                Javascript
-                            </v-sheet>
-                        </v-col>
-                    </v-row>
-                    <v-row no-gutters>
-                        <v-col cols="auto">
-                            <v-sheet class="pa-2 ma-2">
-                                <v-img
-                                :min-width="25"
-                                width="25"
-                                aspect-ratio="16/9"
-                                cover
                                 src="@/assets/html_logo.png"
                             ></v-img>
                             </v-sheet>
@@ -81,6 +63,24 @@
             <v-col cols="auto">
                 <v-sheet class="pa-2 ma-2">
                     Languages
+                    <v-row no-gutters>
+                        <v-col cols="auto">
+                            <v-sheet class="pa-2 ma-2">
+                                <v-img
+                                :min-width="25"
+                                width="25"
+                                aspect-ratio="16/9"
+                                cover
+                                src="@/assets/js_logo.png"
+                                ></v-img>
+                            </v-sheet>
+                        </v-col>
+                        <v-col cols="auto">
+                            <v-sheet class="pa-2 ma-2">
+                                Javascript
+                            </v-sheet>
+                        </v-col>
+                    </v-row>
                     <v-row no-gutters>
                         <v-col cols="auto">
                             <v-sheet class="pa-2 ma-2">
@@ -203,5 +203,19 @@
 <script>
   export default {
     data: () => ({
-  })}
+        webTechnologies: [
+        {
+            name: '',
+            photo: ''
+        },
+        ],
+        other: [
+        {
+            avatar: '',
+            title: '',
+            link: ''
+        },
+        ],
+  })
+  }
 </script>
