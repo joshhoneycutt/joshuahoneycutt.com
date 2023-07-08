@@ -29,6 +29,8 @@
       </v-col>
     </v-row>
   </v-container>
+
+  <v-footer>copyright 2023</v-footer>
 </template>
 
 <script setup>
