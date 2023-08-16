@@ -30,7 +30,7 @@
     </v-row>
   </v-container>
 
-  <v-footer>copyright 2023</v-footer>
+  <Footer />
 </template>
 
 <script setup>
@@ -38,6 +38,7 @@
   import Skills from '@/components/Skills.vue';
   import Education from '@/components/Education.vue';
   import Timeline from '@/components/Timeline.vue';
+  import Footer from '@/components/Footer.vue'
 </script>
 
 <style>
