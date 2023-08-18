@@ -13,7 +13,7 @@
                     :href="item.link">{{ }}
                     </v-list-item>
                     <v-divider class="spacing"></v-divider>
-                    <v-list-item
+                    <v-list-item class="certifications"
                     v-for="item in items"
                     :key="item.title"
                     :prepend-avatar="item.avatar"
@@ -78,7 +78,10 @@
 
 <style>
 .spacing {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.certifications {
     margin-bottom: 5px;
 }
 </style>

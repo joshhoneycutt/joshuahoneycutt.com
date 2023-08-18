@@ -2,14 +2,14 @@
     <v-container>
         <v-row justify="center">
             <v-sheet class="pa-2 ma-2">
-                Web Technologies
+                <h2>Web Technologies</h2>
                 <template v-for="item in webTechnologies">
                     <v-row no-gutters>
                         <v-col cols="auto">
                             <v-sheet class="pa-2 ma-2">
                                 <v-img
-                                    :min-width="25"
-                                    width="25"
+                                    :min-width="30"
+                                    width="30"
                                     aspect-ratio="16/9"
                                     cover
                                     :src="item.photo"
@@ -25,14 +25,14 @@
                 </template>
             </v-sheet>
             <v-sheet class="pa-2 ma-2">
-                Languages
+                <h2>Languages</h2>
                 <template v-for="item in languages">
                     <v-row no-gutters>
                         <v-col cols="auto">
                             <v-sheet class="pa-2 ma-2">
                                 <v-img
-                                    :min-width="25"
-                                    width="25"
+                                    :min-width="30"
+                                    width="30"
                                     aspect-ratio="16/9"
                                     cover
                                     :src="item.photo"
@@ -48,14 +48,14 @@
                 </template>
             </v-sheet>
             <v-sheet class="pa-2 ma-2">
-                Cloud / Databases
+                <h2>Cloud / Databases</h2>
                 <template v-for="item in cloudAndDatabases">
                     <v-row no-gutters>
                         <v-col cols="auto">
                             <v-sheet class="pa-2 ma-2">
                                 <v-img
-                                    :min-width="25"
-                                    width="25"
+                                    :min-width="30"
+                                    width="30"
                                     aspect-ratio="16/9"
                                     cover
                                     :src="item.photo"

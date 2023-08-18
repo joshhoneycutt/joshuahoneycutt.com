@@ -9,12 +9,16 @@
       ],
     }),
   }
+
+  function loadExternalPage() {
+    console.log("Test")
+  }
 </script>
 
 <template>
     <v-footer>
       <v-row justify="center" no-gutters>
-        <v-btn
+        <v-btn @click="loadExternalPage"
             v-for="icon in icons"
             :key="icon"
             class="mx-4"

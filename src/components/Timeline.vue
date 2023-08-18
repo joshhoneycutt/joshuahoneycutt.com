@@ -127,7 +127,7 @@
               ]
             },
             {
-              title: 'Technology Intern for the Territory Analytics Department',
+              title: 'Tech Intern - Territory Analytics',
               bodyArray: [
                 "I utilized C# and SQL Server to enhance an internal application used daily by the territory analytics team. This resulted in improved efficiency, faster performance, and a more streamlined address validation process. Additionally, I produced detailed documentation and architecture diagrams for the existing codebase.",
                 "Assisted with updating and automating ArcGIS scripts using Python batches, resulting in improved nightly job routines and monthly job automation.",
