@@ -2,11 +2,11 @@
   export default {
     data: () => ({
       icons: [
-        {
+        /*{
           image: 'mdi-facebook',
           name: "facebook",
           link: "https://www.facebook.com/joshuahoneycutt",
-        },
+        },*/
         {
           image: 'mdi-twitter',
           name: "twitter",
@@ -18,10 +18,15 @@
           link: "https://www.linkedin.com/in/joshua-honeycutt-4b4a299",
         },
         {
+          image: 'mdi-github',
+          name: "github",
+          link: "https://github.com/joshhoneycutt",
+        },
+        /*{
           image: 'mdi-instagram',
           name: "instagram",
           link: "https://www.instagram.com/josh_honeycutt/?hl=en",
-        },
+        },*/
       ],
     }),
     // define methods under the `methods` object
