@@ -8,9 +8,9 @@
                         <v-col cols="auto">
                             <v-sheet class="pa-2 ma-2">
                                 <v-img
-                                    :min-width="30"
-                                    width="30"
-                                    aspect-ratio="16/9"
+                                    :min-width=logoPxSize
+                                    width=logoPxSize
+                                    aspect-ratio=aspectRatio
                                     cover
                                     :src="item.photo"
                                 ></v-img>
@@ -31,9 +31,9 @@
                         <v-col cols="auto">
                             <v-sheet class="pa-2 ma-2">
                                 <v-img
-                                    :min-width="30"
-                                    width="30"
-                                    aspect-ratio="16/9"
+                                    :min-width=logoPxSize
+                                    width=logoPxSize
+                                    aspect-ratio=aspectRatio
                                     cover
                                     :src="item.photo"
                                 ></v-img>
@@ -54,9 +54,9 @@
                         <v-col cols="auto">
                             <v-sheet class="pa-2 ma-2">
                                 <v-img
-                                    :min-width="30"
-                                    width="30"
-                                    aspect-ratio="16/9"
+                                    :min-width=logoPxSize
+                                    width=logoPxSize
+                                    aspect-ratio=aspectRatio
                                     cover
                                     :src="item.photo"
                                 ></v-img>
@@ -77,6 +77,8 @@
 <script>
   export default {
     data: () => ({
+        logoPxSize: 40,
+        aspectRatio: "16/9",
         webTechnologies: [
         {
             name: 'HTML',
@@ -97,6 +99,10 @@
             photo: 'js_logo.png'
         },
         {
+            name: 'Apex',
+            photo: 'salesforce_logo.png'
+        },
+        {
             name: 'Java',
             photo: 'java_logo.png'
         },
@@ -115,12 +121,12 @@
         ],
         cloudAndDatabases: [
         {
-            name: 'AWS',
-            photo: 'aws_logo.png'
-        },
-        {
             name: 'Salesforce',
             photo: 'salesforce_logo.png'
+        },
+        {
+            name: 'AWS',
+            photo: 'aws_logo.png'
         },
         ],
   })
