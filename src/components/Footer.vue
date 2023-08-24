@@ -22,6 +22,11 @@
           name: "github",
           link: "https://github.com/joshhoneycutt",
         },
+        {
+          image: 'mdi-email',
+          name: "email",
+          link: "joshdhh@gmail.com",
+        },
         /*{
           image: 'mdi-instagram',
           name: "instagram",
@@ -32,7 +37,11 @@
     // define methods under the `methods` object
     methods: {
       loadExternalPage: (value) => {
-        window.open(value.link, '_blank', 'noreferrer');
+        if (value.name != 'email') {
+          window.open(value.link, '_blank', 'noreferrer');
+        } else {
+          window.open('mailto:joshdhh@gmail.com');
+        }      
       }
     }
   }
