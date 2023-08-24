@@ -1,10 +1,10 @@
 <template>
   <v-app-bar flat>
     <v-app-bar-title>
-      Joshua Honeycutt
+      <router-link to='/' class="link_style">Joshua Honeycutt</router-link>
     </v-app-bar-title>
     <v-tab>
-      About Me
+      <router-link to='/about' class="link_style">About Me</router-link>
     </v-tab>
     <v-tab>
       Contact Me
@@ -15,3 +15,10 @@
 <script setup>
   //
 </script>
+
+<style>
+  .link_style {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
