@@ -7,7 +7,7 @@
       <router-link to='/about' class="link_style">About Me</router-link>
     </v-tab>
     <v-tab>
-      Contact Me
+      <router-link to='/contact' class="link_style">Contact Me</router-link>
     </v-tab>
   </v-app-bar>
 </template>

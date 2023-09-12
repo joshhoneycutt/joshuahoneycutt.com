@@ -52,12 +52,28 @@
           role: [
             {
               title: 'Software Engineering SMTS',
+              bodyArray: [
+                "Updated our custom gateway codebase to enable better scalability by adding a queueing system using SQS.",
+                "Refactored our gateway codebase (Golang) to improve code readability and code coverage.",
+                "Introduced LocalStack for integration testing both locally in Docker and in the CI/CD Pipeline.",
+                "Provide engineering, administration, and dev-ops support for various applications using kubernetes, aws, jenkins, splunk, etc. and in-house tools."
+              ]
             },
             {
               title: 'Software Engineering MTS',
+              bodyArray: [
+                "Began working with the Optimization Engineering.",
+                "Designed and developed a Salesforce Managed Package that enabled end-users to communicate with routing engine APIs natively through the Salesforce UI.",
+                "Made extensive updates to an existing managed package that enabled users to see a visualization of routing problems and key metrics within a map interface inside of Salesforce.",
+                "Assisted with administration and support of various applications and infrastructure."
+              ]
             },
             {
               title: 'Senior Technical Consultant',
+              bodyArray: [
+                "Worked hands-on with clients undergoing a digital transformation to design a personalized Salesforce experience that would meet their business needs and integrate with their existing digital infrastructure.",
+                "Designed, developed, tested, and delivered multiple custom features and configurations to the Salesforce interface."
+              ]
             },
             {
               title: 'Sr. Services Developer',
