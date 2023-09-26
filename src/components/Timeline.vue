@@ -3,6 +3,13 @@
     padding-left: 05%;
     padding-right: 05%;
   }
+
+  /* Use a media query to add a breakpoint at 600px: */
+  @media screen and (max-width: 600px) {
+    .v-timeline {
+      display: block !important; /* change the layout, when the viewport is 600px or smaller */
+    }
+  }
 </style>
 
 <template>
