@@ -8,11 +8,6 @@
           link: "https://www.facebook.com/joshuahoneycutt",
         },*/
         {
-          image: 'mdi-twitter',
-          name: "twitter",
-          link: "https://twitter.com/joshhoneycutt?lang=en",
-        },
-        {
           image: 'mdi-linkedin',
           name: "linkedin",
           link: "https://www.linkedin.com/in/joshua-honeycutt-4b4a299",
