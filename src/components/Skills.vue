@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-row justify="center">
-            <v-sheet class="pa-2 ma-2">
+            <v-sheet class="text-md-center pa-2 ma-2">
                 <h2>Web Technologies</h2>
                 <template v-for="item in webTechnologies">
                     <v-row no-gutters>
@@ -24,7 +24,7 @@
                     </v-row>
                 </template>
             </v-sheet>
-            <v-sheet class="pa-2 ma-2">
+            <v-sheet class="text-md-center pa-2 ma-2">
                 <h2>Languages</h2>
                 <template v-for="item in languages">
                     <v-row no-gutters>
@@ -47,8 +47,8 @@
                     </v-row>
                 </template>
             </v-sheet>
-            <v-sheet class="pa-2 ma-2">
-                <h2>Cloud / Databases</h2>
+            <v-sheet class="text-md-center pa-2 ma-2">
+                <h2>Cloud & Other</h2>
                 <template v-for="item in cloudAndDatabases">
                     <v-row no-gutters>
                         <v-col cols="auto">
@@ -127,6 +127,14 @@
         {
             name: 'AWS',
             photo: 'aws_logo.png'
+        },
+        {
+            name: 'Kubernetes',
+            photo: 'kubernetes_logo.png'
+        },
+        {
+            name: 'Microsoft SQL Server',
+            photo: 'microsoft_sql_server_logo.png'
         },
         ],
   })
