@@ -103,20 +103,20 @@
             photo: 'salesforce_logo.png'
         },
         {
-            name: 'Java',
-            photo: 'java_logo.png'
+            name: 'Golang',
+            photo: 'golang_logo.png'
         },
         {
             name: 'Python',
             photo: 'python_logo.png'
         },
         {
-            name: 'Golang',
-            photo: 'golang_logo.png'
-        },
-        {
             name: 'C#',
             photo: 'csharp_logo.png'
+        },
+        {
+            name: 'Java',
+            photo: 'java_logo.png'
         },
         ],
         cloudAndDatabases: [

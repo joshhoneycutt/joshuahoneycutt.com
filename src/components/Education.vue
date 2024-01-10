@@ -60,8 +60,8 @@
             link: 'https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=U1ZhzD1ua6SSex62QXeD5fczFhunP9nvEKBv5aaVeJzeNlSmPHeC+7wQ9Nf+u6bL'
         },
         {
-            avatar: 'double-star-ranger.png',
-            title: 'Salesforce Double Star Ranger',
+            avatar: 'triple-star-ranger.png',
+            title: 'Salesforce Triple Star Ranger',
             link: 'https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=U1ZhzD1ua6SSex62QXeD5fczFhunP9nvEKBv5aaVeJzeNlSmPHeC+7wQ9Nf+u6bL'
         },
       ],
