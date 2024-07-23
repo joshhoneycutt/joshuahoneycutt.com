@@ -17,14 +17,14 @@
     <v-row class="mb-6">
       <v-col>
         <v-sheet class="pa-2 ma-2">
-          <Timeline />
+          <Education />
         </v-sheet>
       </v-col>
     </v-row>
     <v-row class="mb-6">
       <v-col>
         <v-sheet class="pa-2 ma-2">
-          <Education />
+          <Timeline />
         </v-sheet>
       </v-col>
     </v-row>
