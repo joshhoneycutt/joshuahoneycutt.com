@@ -1,142 +1,82 @@
 <template>
-    <v-container>
-        <v-row justify="center">
-            <v-sheet class="text-md-center pa-2 ma-2">
-                <h2>Web Technologies</h2>
-                <template v-for="item in webTechnologies">
-                    <v-row no-gutters>
-                        <v-col cols="auto">
-                            <v-sheet class="pa-2 ma-2">
-                                <v-img
-                                    :min-width=logoPxSize
-                                    width=logoPxSize
-                                    aspect-ratio=aspectRatio
-                                    cover
-                                    :src="item.photo"
-                                ></v-img>
-                            </v-sheet>
-                        </v-col>
-                        <v-col cols="auto">
-                            <v-sheet class="pa-2 ma-2">
-                                {{ item.name }}
-                            </v-sheet>
-                        </v-col>
-                    </v-row>
-                </template>
-            </v-sheet>
-            <v-sheet class="text-md-center pa-2 ma-2">
-                <h2>Languages</h2>
-                <template v-for="item in languages">
-                    <v-row no-gutters>
-                        <v-col cols="auto">
-                            <v-sheet class="pa-2 ma-2">
-                                <v-img
-                                    :min-width=logoPxSize
-                                    width=logoPxSize
-                                    aspect-ratio=aspectRatio
-                                    cover
-                                    :src="item.photo"
-                                ></v-img>
-                            </v-sheet>
-                        </v-col>
-                        <v-col cols="auto">
-                            <v-sheet class="pa-2 ma-2">
-                                {{ item.name }}
-                            </v-sheet>
-                        </v-col>
-                    </v-row>
-                </template>
-            </v-sheet>
-            <v-sheet class="text-md-center pa-2 ma-2">
-                <h2>Cloud & Other</h2>
-                <template v-for="item in cloudAndDatabases">
-                    <v-row no-gutters>
-                        <v-col cols="auto">
-                            <v-sheet class="pa-2 ma-2">
-                                <v-img
-                                    :min-width=logoPxSize
-                                    width=logoPxSize
-                                    aspect-ratio=aspectRatio
-                                    cover
-                                    :src="item.photo"
-                                ></v-img>
-                            </v-sheet>
-                        </v-col>
-                        <v-col cols="auto">
-                            <v-sheet class="pa-2 ma-2">
-                                {{ item.name }}
-                            </v-sheet>
-                        </v-col>
-                    </v-row>
-                </template>
-            </v-sheet>
-        </v-row>
-    </v-container>
+  <div>
+    <h2 class="section-heading text-h5 font-weight-bold mb-6">Skills</h2>
+    <v-row>
+      <v-col cols="12" sm="4" v-for="group in skillGroups" :key="group.title">
+        <p class="text-overline text-medium-emphasis mb-3">{{ group.title }}</p>
+        <div class="d-flex flex-wrap" style="gap: 8px;">
+          <div
+            v-for="item in group.items"
+            :key="item.name"
+            class="skill-chip d-flex align-center rounded-lg px-3 py-2"
+          >
+            <div class="logo-wrap mr-2">
+              <v-img :src="item.photo" :width="18" :height="18" contain />
+            </div>
+            <span class="text-body-2 font-weight-medium">{{ item.name }}</span>
+          </div>
+        </div>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
-  export default {
-    data: () => ({
-        logoPxSize: 40,
-        aspectRatio: "16/9",
-        webTechnologies: [
-        {
-            name: 'HTML',
-            photo: 'html_logo.png'
-        },
-        {
-            name: 'CSS',
-            photo: 'css_logo.png'
-        },
-        {
-            name: 'VueJS',
-            photo: 'vuejs_logo.png'
-        },
+export default {
+  data: () => ({
+    skillGroups: [
+      {
+        title: 'Frontend',
+        items: [
+          { name: 'HTML', photo: 'html_logo.png' },
+          { name: 'CSS', photo: 'css_logo.png' },
+          { name: 'JavaScript', photo: 'js_logo.png' },
+          { name: 'VueJS', photo: 'vuejs_logo.png' },
         ],
-        languages: [
-        {
-            name: 'Javascript',
-            photo: 'js_logo.png'
-        },
-        {
-            name: 'Apex',
-            photo: 'salesforce_logo.png'
-        },
-        {
-            name: 'Golang',
-            photo: 'golang_logo.png'
-        },
-        {
-            name: 'Python',
-            photo: 'python_logo.png'
-        },
-        {
-            name: 'C#',
-            photo: 'csharp_logo.png'
-        },
-        {
-            name: 'Java',
-            photo: 'java_logo.png'
-        },
+      },
+      {
+        title: 'Languages',
+        items: [
+          { name: 'Apex', photo: 'salesforce_logo.png' },
+          { name: 'Golang', photo: 'golang_logo.png' },
+          { name: 'Python', photo: 'python_logo.png' },
+          { name: 'C#', photo: 'csharp_logo.png' },
+          { name: 'Java', photo: 'java_logo.png' },
         ],
-        cloudAndDatabases: [
-        {
-            name: 'Salesforce',
-            photo: 'salesforce_logo.png'
-        },
-        {
-            name: 'AWS',
-            photo: 'aws_logo.png'
-        },
-        {
-            name: 'Kubernetes',
-            photo: 'kubernetes_logo.png'
-        },
-        {
-            name: 'Microsoft SQL Server',
-            photo: 'microsoft_sql_server_logo.png'
-        },
+      },
+      {
+        title: 'Cloud & Infrastructure',
+        items: [
+          { name: 'Salesforce', photo: 'salesforce_logo.png' },
+          { name: 'AWS', photo: 'aws_logo.png' },
+          { name: 'Kubernetes', photo: 'kubernetes_logo.png' },
+          { name: 'MS SQL Server', photo: 'microsoft_sql_server_logo.png' },
         ],
-  })
-  }
+      },
+    ],
+  }),
+}
 </script>
+
+<style scoped>
+.skill-chip {
+  background: rgb(var(--v-theme-surface-variant));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 0.2s;
+  cursor: default;
+}
+.skill-chip:hover {
+  border-color: rgb(var(--v-theme-primary));
+}
+.logo-wrap {
+  background: white;
+  border-radius: 3px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+</style>
