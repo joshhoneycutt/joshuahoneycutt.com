@@ -6,7 +6,7 @@
       <v-card-item>
         <template #prepend>
           <v-avatar size="52" rounded="lg" class="mr-2" style="background: white;">
-            <v-img src="Charlotte.jpg" contain />
+            <v-img src="/Charlotte.jpg" contain />
           </v-avatar>
         </template>
         <v-card-title class="text-body-1 font-weight-bold">
@@ -55,7 +55,7 @@ export default {
   data: () => ({
     items: [
       {
-        avatar: 'aws-cloud-practitioner.png',
+        avatar: '/aws-cloud-practitioner.png',
         title: 'AWS Certified Cloud Practitioner',
         link: 'https://www.credly.com/badges/cfacfa40-3419-4502-9703-d8800c492185/public_url',
       },
@@ -70,22 +70,22 @@ export default {
         link: 'https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=U1ZhzD1ua6SSex62QXeD5fczFhunP9nvEKBv5aaVeJzeNlSmPHeC+7wQ9Nf+u6bL',
       },
       {
-        avatar: 'Platform-Developer-I.png',
+        avatar: '/Platform-Developer-I.png',
         title: 'Salesforce Certified Platform Developer I',
         link: 'https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=U1ZhzD1ua6SSex62QXeD5fczFhunP9nvEKBv5aaVeJzeNlSmPHeC+7wQ9Nf+u6bL',
       },
       {
-        avatar: 'Sales-Cloud-Consultant.png',
+        avatar: '/Sales-Cloud-Consultant.png',
         title: 'Salesforce Certified Sales Cloud Consultant',
         link: 'https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=U1ZhzD1ua6SSex62QXeD5fczFhunP9nvEKBv5aaVeJzeNlSmPHeC+7wQ9Nf+u6bL',
       },
       {
-        avatar: 'Service-Cloud-Consultant.png',
+        avatar: '/Service-Cloud-Consultant.png',
         title: 'Salesforce Certified Service Cloud Consultant',
         link: 'https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=U1ZhzD1ua6SSex62QXeD5fczFhunP9nvEKBv5aaVeJzeNlSmPHeC+7wQ9Nf+u6bL',
       },
       {
-        avatar: 'triple-star-ranger.png',
+        avatar: '/triple-star-ranger.png',
         title: 'Salesforce Triple Star Ranger',
         link: 'https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=U1ZhzD1ua6SSex62QXeD5fczFhunP9nvEKBv5aaVeJzeNlSmPHeC+7wQ9Nf+u6bL',
       },
